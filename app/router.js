@@ -6,6 +6,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('conversations', function() {
+    this.route('new');
+    this.route('single');
+  });
 });
 
 export default Router;

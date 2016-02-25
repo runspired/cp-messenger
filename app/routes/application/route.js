@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+<<<<<<< HEAD
 
   session: Ember.inject.service('session'),
   firebase: Ember.inject.service('firebase'),
@@ -45,4 +46,6 @@ export default Ember.Route.extend({
         });
     }
   }
+=======
+>>>>>>> initial work on login feature
 });

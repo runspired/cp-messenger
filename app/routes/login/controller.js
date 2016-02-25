@@ -1,5 +1,6 @@
 import Ember from 'ember';
 
+<<<<<<< HEAD
 const {
   Controller,
   inject
@@ -78,4 +79,7 @@ export default Controller.extend({
     }
 
   }
+=======
+export default Ember.Controller.extend({
+>>>>>>> initial work on login feature
 });

@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'cp-messenger',
+    podModulePrefix: 'cp-messenger/routes',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',

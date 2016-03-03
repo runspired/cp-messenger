@@ -5,7 +5,9 @@ module.exports = function(environment) {
     modulePrefix: 'cp-messenger',
     podModulePrefix: 'cp-messenger/routes',
     environment: environment,
-    baseURL: 'https://cp-messenger.firebaseio.com/
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://cp-messenger.firebaseio.com/',
+    baseURL: '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -16,7 +18,7 @@ module.exports = function(environment) {
 
     torii: {
       sessionServiceName: 'session'
-    }
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance

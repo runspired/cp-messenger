@@ -62,7 +62,6 @@ export default Controller.extend({
               alert("Error creating user:" + JSON.stringify(error, null, 2));
           }
         } else {
-          alert("Successfully created user account with uid:" + userData.uid);
           this.set('model.id', userData.uid);
           this.set('model.uid', userData.uid);
           this.set('model.email', email);
